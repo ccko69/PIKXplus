@@ -1,4 +1,4 @@
-<resources xmlns:tools="schemas.android.com">
+<resources xmlns:tools="http://www.schemas.android.com">
     <style
         name="Theme.MyApplication"
         parent="Theme.MaterialComponents.DayNight.NoActionBar">
