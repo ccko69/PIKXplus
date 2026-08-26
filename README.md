@@ -4,11 +4,7 @@ tags:
   - Tech-Stack
   - Dependencies
   - Architecture
-  - Hermes
-  - Resume-Protocol
   - Paths
-  - TODO
-date: 2026-08-07
 ---
 
 # Overview
@@ -113,4 +109,4 @@ main.kotlin.com.ccko.pikxplus/
 ```
 
 **Project's File index and a short Summary for each File:**
-[[PIKX+ Project File Index]]
+[PIKX+ Project File Index]
