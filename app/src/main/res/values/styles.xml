@@ -1,0 +1,111 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="SoRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingHorizontal">12dp</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+    <style name="SoTxt">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="VMTxt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingHorizontal">12sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="SoArw">
+        <item name="android:layout_width">18dp</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:tint">@color/white</item>
+        <item name="android:alpha">0.6</item>
+    </style>
+    <style name="StpBtn">
+        <item name="android:layout_width">36dp</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:tint">@color/white</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="ImgFrgBtn">
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:focusable">auto</item>
+        <item name="android:clickable">true</item>
+        <item name="android:tint">@color/white</item>
+    </style>
+    <style name="VidFrgBtn">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:focusable">auto</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="VidFrgMainSeek">
+        <item name="android:layout_weight">1</item>
+        <item name="android:maxHeight">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <!-- <item name="android:paddingBottom">8dp</item> -->
+        <item name="android:splitTrack">false</item>
+        <item name="android:progressDrawable">@drawable/seekbar_progress</item>
+        <item name="android:thumb">@drawable/seekbar_thumb</item>
+        <item name="android:focusable">auto</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="MatStpBtn">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <style name="DrkShdwR3x1y1">
+        <item name="android:shadowRadius">3</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+    <style
+        name="CustomExpandedTitle"
+        parent="TextAppearance.Design.CollapsingToolbar.Expanded">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:shadowRadius">3</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+    <style
+        name="CustomCollapseTitle"
+        parent="TextAppearance.Design.CollapsingToolbar.Expanded">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+    <style name="FloatImgFab">
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:tint">#000000</item>
+        <item name="android:backgroundTint">@color/clr_Prim</item>
+        <item name="android:background">@drawable/bg_btn_square_rid_dark</item>
+        <item name="android:focusable">auto</item>
+        <item name="android:clickable">true</item>
+    </style>
+</resources>

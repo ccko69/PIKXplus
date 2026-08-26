@@ -1,0 +1,52 @@
+<resources>
+    <string-array name="thumbnail_quality_entries">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+    <string-array name="thumbnail_quality_values">
+        <item>low</item>
+        <item>medium</item>
+        <item>high</item>
+    </string-array>
+    <string-array name="slideshow_anim_entries">
+        <item>Fade</item>
+        <item>Transition</item>
+        <item>Zoom</item>
+        <item>Combined</item>
+    </string-array>
+    <string-array name="slideshow_anim_values">
+        <item>fade</item>
+        <item>transition</item>
+        <item>zoom</item>
+        <item>combined</item>
+    </string-array>
+    <string-array name="slideshow_auto_rotation_direction_entries">
+        <item>Left</item>
+        <item>Right</item>
+    </string-array>
+    <string-array name="slideshow_auto_rotation_direction_values">
+        <item>left</item>
+        <item>right</item>
+    </string-array>
+    <string-array name="img_auto_rotation_mode_entries">
+        <item>Disable</item>
+        <item>Enable| Right</item>
+        <item>Enable| Left</item>
+    </string-array>
+    <string-array name="img_auto_rotation_mode_values">
+        <item>disable</item>
+        <item>right</item>
+        <item>left</item>
+    </string-array>
+    <string-array name="vid_landscape_mode_entries">
+        <item>Portrait</item>
+        <item>Landscape</item>
+        <item>Auto</item>
+    </string-array>
+    <string-array name="vid_landscape_mode_values">
+        <item>portrait</item>
+        <item>landscape</item>
+        <item>auto</item>
+    </string-array>
+</resources>

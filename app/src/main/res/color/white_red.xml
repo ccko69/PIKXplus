@@ -1,0 +1,8 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Toggled state: dark red -->
+    <item
+        android:state_selected="true"
+        android:color="#B00020" />
+    <!-- Default state: white -->
+    <item android:color="#FFFFFF" />
+</selector>

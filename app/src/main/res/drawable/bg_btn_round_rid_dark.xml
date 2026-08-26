@@ -1,0 +1,14 @@
+<ripple
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#40FFFFFF">
+    <!-- Ripple effect color -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#CC000000"/>
+            <!-- Subtle semi-transparent white background -->
+            <size
+                android:height="60dp"
+                android:width="60dp"/>
+        </shape>
+    </item>
+</ripple>

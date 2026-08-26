@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@drawable/round_bg_red_stroke"
+    android:padding="12dp"
+    android:layout_marginEnd="24dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/btn_more_orientation">
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_orientation"
+            style="@style/StpBtn"
+            android:layout_gravity="center_vertical|start" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical|start"
+            style="@style/VMTxt"
+            android:text="Orientation" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/btn_more_delete">
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_delete"
+            style="@style/StpBtn"
+            android:layout_gravity="center_vertical|start" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical|start"
+            style="@style/VMTxt"
+            android:text="Delete" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/btn_more_slideshow">
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_play_circle"
+            style="@style/StpBtn"
+            android:layout_gravity="center_vertical|start" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical|start"
+            style="@style/VMTxt"
+            android:text="SlideShow" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/btn_more_enhance">
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_auto_enhance"
+            style="@style/StpBtn"
+            android:layout_gravity="center_vertical|start" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical|start"
+            style="@style/VMTxt"
+            android:text="Auto Enhance" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/btn_more_info">
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_info"
+            style="@style/StpBtn"
+            android:layout_gravity="center_vertical|start" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical|start"
+            style="@style/VMTxt"
+            android:text="Info" />
+    </LinearLayout>
+</LinearLayout>

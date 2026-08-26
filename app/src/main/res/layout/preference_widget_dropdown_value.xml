@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Reusable widget layout: shows the current value + an expand arrow
+     on the right side of a preference row. Use with ValueDropDownPreference. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="8dp"
+    android:paddingEnd="0dp">
+    <TextView
+        android:id="@+id/pref_value_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="end|center_vertical"
+        android:maxWidth="180dp"
+        android:maxLines="1"
+        android:text="info"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+    <ImageView
+        android:id="@+id/pref_value_arrow"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="4dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_expand_more"
+        android:tint="?android:attr/textColorSecondary" />
+</LinearLayout>

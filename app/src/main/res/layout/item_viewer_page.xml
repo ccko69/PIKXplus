@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/pageContainer"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/black">
+    <!-- SubsamplingScaleImageView for large images -->
+    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+    android:id="@+id/scaleImageView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:visibility="gone"
+    app:panEnabled="true"
+    app:zoomEnabled="true"
+    app:quickScaleEnabled="true" />
+    <!-- Fallback ImageView for GIFs/animated WebP -->
+    <ImageView
+    android:id="@+id/errorImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/black"
+    android:clickable="false"
+    android:scaleType="fitCenter"
+    android:visibility="gone" />
+    <!-- Video Player (ExoPlayer) -->
+    <androidx.media3.ui.PlayerView
+    android:id="@+id/playerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    app:use_controller="false"
+    app:bar_gravity="bottom"
+    app:shutter_background_color="@color/black"
+    app:show_timeout="0"
+    android:layout_gravity="center"
+    android:background="@color/black"
+    app:surface_type="texture_view"
+    app:resize_mode="fit" />
+    <!-- Loading Progress -->
+    <com.ccko.pikxplus.shared.utils.PulseOrbView
+    android:id="@+id/progress"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:visibility="gone"
+    android:layout_gravity="center" />
+</FrameLayout>

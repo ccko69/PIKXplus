@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="false"
+    android:id="@+id/photoHeader">
+    <ImageView
+        android:layout_height="350dp"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/headerImage"/>
+    <TextView
+        android:layout_height="80dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/gradient_top2bottom_fade"
+        android:padding="16dp"
+        android:fitsSystemWindows="false"
+        android:id="@+id/albumTitle"
+        android:layout_gravity="top|start"/>
+    <ImageButton
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:src="@drawable/ic_sort"
+        android:background="@drawable/circle_button_single"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/clr_Prim"
+        android:tint="@color/black"
+        android:layout_gravity="bottom|start"
+        android:id="@+id/sortButton"/>
+    <ImageButton
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:src="@drawable/ic_grid"
+        android:background="@drawable/circle_button_single"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/clr_Prim"
+        android:tint="@color/black"
+        android:layout_gravity="bottom|end"
+        android:id="@+id/viewModeButton"/>
+</FrameLayout>

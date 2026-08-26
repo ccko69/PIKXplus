@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Outer rim -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="?attr/colorOnSurface"
+        android:strokeWidth="1.6"
+        android:pathData="M12,2.5
+                          A9.5,9.5 0 1,1 11.999,2.5" />
+
+    <!-- Inner hub -->
+    <path
+        android:fillColor="?attr/colorOnSurface"
+        android:pathData="M12,9.5
+                          a2.5,2.5 0 1,0 0.001,0" />
+
+    <!-- Spokes (8) -->
+    <group android:pivotX="12" android:pivotY="12">
+        <path android:strokeColor="?attr/colorOnSurface" android:strokeWidth="1.2"
+            android:pathData="M12,3.2 L12,8.8" />
+        <path android:strokeColor="?attr/colorOnSurface" android:strokeWidth="1.2"
+            android:pathData="M12,15.2 L12,20.8" />
+        <path android:strokeColor="?attr/colorOnSurface" android:strokeWidth="1.2"
+            android:pathData="M3.2,12 L8.8,12" />
+        <path android:strokeColor="?attr/colorOnSurface" android:strokeWidth="1.2"
+            android:pathData="M15.2,12 L20.8,12" />
+        <path android:strokeColor="?attr/colorOnSurface" android:strokeWidth="1.2"
+            android:pathData="M5.1,5.1 L8.9,8.9" />
+        <path android:strokeColor="?attr/colorOnSurface" android:strokeWidth="1.2"
+            android:pathData="M15.1,15.1 L18.9,18.9" />
+        <path android:strokeColor="?attr/colorOnSurface" android:strokeWidth="1.2"
+            android:pathData="M5.1,18.9 L8.9,15.1" />
+        <path android:strokeColor="?attr/colorOnSurface" android:strokeWidth="1.2"
+            android:pathData="M15.1,8.9 L18.9,5.1" />
+    </group>
+
+</vector>

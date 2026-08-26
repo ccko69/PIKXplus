@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="horizontal"
+    android:padding="8dp">
+    <!-- Thumbnail -->
+    <ImageView
+        android:id="@+id/videoThumbnail"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:background="@color/gry_darkP"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_video"/>
+    <!-- Video info -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <!-- Filename -->
+        <TextView
+            android:id="@+id/videoName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Video_20241220.mp4"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+        <!-- File size -->
+        <TextView
+            android:id="@+id/videoSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="12.5 MB"
+            android:textColor="@color/gry_light"
+            android:textSize="12sp"/>
+    </LinearLayout>
+    <!-- Checkmark (currently playing) -->
+    <ImageView
+        android:id="@+id/playingIndicator"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/ic_check"
+        android:tint="@color/clr_Prim"
+        android:visibility="gone"/>
+</LinearLayout>

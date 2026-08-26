@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/playButtonContainer"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@android:color/transparent"
+android:clickable="false"
+android:focusable="false">
+    <ImageView
+    android:id="@+id/playButtonOverlay"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="150dp"
+    android:clickable="true"
+    android:elevation="4dp"
+    android:focusable="true"
+    android:src="@drawable/ic_play_circle"
+    android:tint="#900020"
+    android:visibility="visible" />
+</RelativeLayout>

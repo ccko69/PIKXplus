@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="40dp"
+    android:background="@drawable/round_bg_red_stroke"
+    android:padding="8dp"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        style="@style/SoRow"
+        android:id="@+id/btnSo_name">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/SoTxt"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/txt_name"
+            android:text="Name" />
+        <ImageView
+            android:layout_height="36dp"
+            android:layout_width="18dp"
+            android:src="@drawable/ic_arrow_down"
+            style="@style/SoArw"
+            android:id="@+id/arrow_name" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        style="@style/SoRow"
+        android:id="@+id/btnSo_date">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/SoTxt"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/txt_date"
+            android:text="Date" />
+        <ImageView
+            android:layout_height="36dp"
+            android:layout_width="18dp"
+            android:src="@drawable/ic_arrow_down"
+            style="@style/SoArw"
+            android:id="@+id/arrow_date" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        style="@style/SoRow"
+        android:id="@+id/btnSo_size">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/SoTxt"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/txt_size"
+            android:text="Size" />
+        <ImageView
+            android:layout_height="36dp"
+            android:layout_width="18dp"
+            android:src="@drawable/ic_arrow_down"
+            style="@style/SoArw"
+            android:id="@+id/arrow_size" />
+    </LinearLayout>
+</LinearLayout>

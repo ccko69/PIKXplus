@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Primary: in NORMAL mode, tap to bookmark-flag selection. In SELECT mode, this slot
+         is repurposed to "Select All" (icon flipped to ic_check_circle). -->
+    <item
+    android:id="@+id/action_bookmark"
+    android:title="@string/bookmark"
+    android:icon="@drawable/ic_bookmark"
+    app:showAsAction="always" />
+    <!-- Secondary: in NORMAL mode, tap to enter the unified selection mode (visibility).
+         In SELECT mode, this slot is repurposed to "Done" (icon flipped to ic_close). -->
+    <item
+    android:id="@+id/action_manage"
+    android:title="@string/manage_albums"
+    android:icon="@drawable/ic_visibility"
+    app:showAsAction="always" />
+    <!-- Tertiary: list/grid toggle. Always present, never swapped. -->
+    <item
+    android:id="@+id/action_grid_list"
+    android:title="@string/grid_list"
+    android:icon="@drawable/ic_list_album"
+    app:showAsAction="always" />
+</menu>

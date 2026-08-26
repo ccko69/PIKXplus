@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    android:background="@drawable/gradient_top2bottom_fade"
+    app:liftOnScroll="true"
+    app:background="@drawable/gradient_top2bottom_fade"
+    android:id="@+id/appBarAlbums">
+        <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAlbums"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:titleTextColor="@color/white"
+        android:title="@string/albums"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:titleMarginStart="16dp"
+        app:title="Albums" />
+        <!-- Progress indicator under toolbar -->
+        <ProgressBar
+        android:id="@+id/progressBarAlbums"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:progressDrawable="@drawable/progress_horizontal" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/swipeRefreshAlbums"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ryclAlbums"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:background="#CC161616"
+        android:fitsSystemWindows="false"
+        android:clipToPadding="false" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

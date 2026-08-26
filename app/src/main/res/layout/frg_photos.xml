@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_height="match_parent"
+android:layout_width="match_parent"
+android:background="#161616"
+android:fitsSystemWindows="false"
+android:id="@+id/photosFragmentRoot">
+    <com.google.android.material.appbar.AppBarLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        app:contentScrim="?attr/colorPrimary"
+        app:expandedTitleTextAppearance="@style/CustomExpandedTitle"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        app:title="Album Name"
+        app:expandedTitleMarginStart="16dp"
+        app:collapsedTitleTextAppearance="@style/CustomCollapseTitle"
+        app:expandedTitleGravity="top|start"
+        app:expandedTitleMarginBottom="28dp"
+        android:id="@+id/collapsingToolbar">
+            <include
+            android:id="@+id/photoHeader"
+            layout="@layout/item_photo_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_collapseMode="parallax" />
+            <androidx.appcompat.widget.Toolbar
+            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/gradient_top2bottom_fade"
+            app:layout_collapseMode="pin"
+            android:id="@+id/toolbar" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:scrollbars="vertical"
+    android:scrollbarSize="0dp"
+    android:scrollbarDefaultDelayBeforeFade="5"
+    android:scrollbarStyle="insideOverlay"
+    android:clipToPadding="false"
+    android:id="@+id/recyclerViewPhotos" />
+    <!-- Scroll-to-top button. Hidden by default; PhotosFrg shows/hides it based on scroll offset. -->
+    <ImageButton
+    android:id="@+id/btnScrollTop"
+    android:layout_width="60dp"
+    android:layout_height="36dp"
+    android:layout_gravity="bottom|center"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/bg_btn_square_rid_dark"
+    android:src="@drawable/ic_expand_less"
+    app:tint="@color/white"
+    android:padding="12dp"
+    android:elevation="6dp"
+    android:visibility="gone"
+    android:contentDescription="Scroll to top" />
+    <!-- Fast scroller (me.zhanghai.android.fastscroll) attaches itself here at runtime via code, drawing its own draggable thumb over recyclerViewPhotos. No XML element needed for it. -->
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

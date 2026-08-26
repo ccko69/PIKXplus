@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/searchRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CC161616"
+    android:orientation="vertical">
+    <!-- Title -->
+    <TextView
+        android:id="@+id/searchTitle"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="16dp"
+        android:fitsSystemWindows="false"
+        android:layout_gravity="top|start"
+        style="@style/DrkShdwR3x1y1"
+        android:text="Search"
+        android:background="@drawable/gradient_top2bottom_fade"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="#CC161616"
+        android:orientation="vertical">
+        <!-- Filter Chips (Single Selection) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Filter by type:"
+            android:textColor="@color/gry_light"
+            android:textSize="14sp"/>
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/filterChipGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal"
+            app:singleSelection="true"
+            app:selectionRequired="false">
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipImages"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:checkable="true"
+                android:text="Images"
+                app:chipIcon="@drawable/ic_photo"
+                app:chipIconTint="@color/white"
+                app:checkedIconTint="#B00020"/>
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipVideos"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:checkable="true"
+                android:text="Videos"
+                app:chipIcon="@drawable/ic_video"
+                app:chipIconTint="@color/white"
+                app:checkedIconTint="#B00020"/>
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipGifs"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:checkable="true"
+                android:text="GIFs"
+                app:chipIcon="@drawable/ic_gif"
+                app:chipIconTint="@color/white"
+                app:checkedIconTint="#B00020"/>
+        </com.google.android.material.chip.ChipGroup>
+        <!-- Search Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/searchInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:boxBackgroundColor="@color/gry_light"
+            app:boxStrokeColor="@color/clr_Prim"
+            app:endIconMode="clear_text"
+            app:hintTextColor="@color/gry_light"
+            app:startIconDrawable="@drawable/ic_search"
+            app:startIconTint="@color/clr_PrimMid">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/searchInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/gry_darkP"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- Reset Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnReset"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:text="Clear Filter"
+            android:backgroundTint="@color/white"
+            app:strokeColor="@color/clr_Prim"
+            app:strokeWidth="1dp"/>
+        <!-- Hint Text -->
+        <TextView
+            android:id="@+id/searchHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="Tip: type extensions with or without dot, e.g. jpg or .mp4"
+            android:textColor="@color/gry_light"
+            android:textSize="12sp"/>
+    </LinearLayout>
+</LinearLayout>

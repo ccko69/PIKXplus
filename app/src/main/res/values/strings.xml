@@ -1,0 +1,10 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">PIKX+</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="manage_albums">Manage Albums</string>
+    <string name="grid_list">Grid/List</string>
+    <string name="select_all">Select All</string>
+    <string name="done">Done</string>
+    <string name="albums">Albums</string>
+    <string name="loading">Loading...</string>
+</resources>

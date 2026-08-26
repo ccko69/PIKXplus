@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_height="match_parent"
+android:layout_width="match_parent"
+android:background="@android:color/transparent"
+android:fitsSystemWindows="false"
+android:clipChildren="false"
+android:clipToPadding="false"
+android:id="@+id/vidCtrlRoot">
+    <LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@drawable/grad_top2bot_vid"
+    android:orientation="vertical"
+    android:paddingHorizontal="8dp"
+    android:id="@+id/videoTopBar"
+    android:layout_gravity="top"
+    android:paddingTop="20dp">
+        <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+            <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginHorizontal="12dp"
+            android:ellipsize="middle"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:id="@+id/videoTitle"
+            android:textStyle="bold" />
+            <View
+            android:layout_height="match_parent"
+            android:layout_width="4dp" />
+        </LinearLayout>
+        <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:fitsSystemWindows="true">
+            <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:contentDescription="Back"
+            android:src="@drawable/ic_arrow_back"
+            app:tint="@color/white"
+            style="@style/VidFrgBtn"
+            android:id="@+id/videoBackButton" />
+            <View
+            android:layout_height="1dp"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+            <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:contentDescription="Orientation"
+            android:src="@drawable/ic_orientation"
+            app:tint="@color/white"
+            style="@style/VidFrgBtn"
+            android:id="@+id/orientationButton" />
+            <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:contentDescription="Playlist"
+            android:src="@drawable/ic_playlist"
+            app:tint="@color/white"
+            style="@style/VidFrgBtn"
+            android:id="@+id/playlistButton" />
+            <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:contentDescription="Loop"
+            android:src="@drawable/ic_loop_off"
+            app:tint="@color/white_red"
+            style="@style/VidFrgBtn"
+            android:id="@+id/loopButton" />
+            <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:contentDescription="Shuffle"
+            android:src="@drawable/ic_shuffle"
+            app:tint="@color/white_red"
+            style="@style/VidFrgBtn"
+            android:id="@+id/shuffleButton" />
+            <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:contentDescription="Speed"
+            android:src="@drawable/ic_speed"
+            app:tint="@color/white_red"
+            style="@style/VidFrgBtn"
+            android:id="@+id/speedButton" />
+            <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:contentDescription="Lock"
+            android:src="@drawable/ic_unlock"
+            app:tint="@color/white_red"
+            style="@style/VidFrgBtn"
+            android:id="@+id/lockButton" />
+            <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:contentDescription="More"
+            android:src="@drawable/ic_more_vert"
+            app:tint="@color/white"
+            style="@style/VidFrgBtn"
+            android:id="@+id/moreButton" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:gravity="bottom"
+    android:background="@drawable/grad_bot2top_vid"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingHorizontal="8dp"
+    android:id="@+id/videoBottomBar"
+    android:layout_gravity="bottom">
+        <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+            <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:id="@+id/currentTime" />
+            <SeekBar
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            style="@style/VidFrgMainSeek"
+            android:layout_weight="1"
+            android:id="@+id/videoSeekBar" />
+            <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:id="@+id/totalTime" />
+        </LinearLayout>
+        <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+            <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:contentDescription="Mute"
+            android:src="@drawable/ic_volume_on"
+            android:layout_marginHorizontal="20dp"
+            app:tint="@color/white_red"
+            style="@style/VidFrgBtn"
+            android:layout_weight="1"
+            android:id="@+id/muteButton"
+            android:layout_gravity="center" />
+            <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:contentDescription="Previous"
+            android:src="@drawable/ic_skip_previous"
+            app:tint="@color/white"
+            style="@style/VidFrgBtn"
+            android:id="@+id/previousButton"
+            android:layout_gravity="center" />
+            <ImageButton
+            android:layout_height="56dp"
+            android:layout_width="56dp"
+            android:contentDescription="Play/Pause"
+            android:src="@drawable/ic_play"
+            app:tint="@color/white"
+            style="@style/VidFrgBtn"
+            android:layout_weight="1"
+            android:id="@+id/playPauseButton"
+            android:layout_gravity="center" />
+            <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:contentDescription="Next"
+            android:src="@drawable/ic_skip_next"
+            app:tint="@color/white"
+            style="@style/VidFrgBtn"
+            android:layout_marginStart="30dp"
+            android:id="@+id/nextButton"
+            android:layout_gravity="center" />
+            <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:contentDescription="Aspect Ratio"
+            android:src="@drawable/ic_ratio_fill"
+            android:layout_marginHorizontal="20dp"
+            app:tint="@color/white_red"
+            style="@style/VidFrgBtn"
+            android:layout_weight="1"
+            android:id="@+id/ratioButton"
+            android:layout_gravity="center" />
+        </LinearLayout>
+        
+    </LinearLayout>
+    <LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:visibility="gone"
+    android:background="@android:color/transparent"
+    android:gravity="start"
+    android:padding="4dp"
+    android:orientation="horizontal"
+    android:fitsSystemWindows="false"
+    android:layout_marginStart="12dp"
+    android:id="@+id/FloatBar"
+    android:layout_gravity="bottom|start">
+        <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="2dp"
+        android:textSize="12sp"
+        android:textColor="@color/gry_light"
+        android:id="@+id/FloatCurrentTime" />
+        <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="2dp"
+        android:textSize="12sp"
+        android:textColor="@color/gry_light"
+        android:text="¦" />
+        <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="2dp"
+        android:textSize="12sp"
+        android:textColor="@color/gry_light"
+        android:id="@+id/FloatTotalTime" />
+    </LinearLayout>
+    <ImageButton
+    android:id="@+id/floatUnlockButton"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:src="@drawable/ic_lock"
+    style="@style/VidFrgBtn"
+    android:visibility="gone"
+    android:layout_gravity="top|start"
+    android:layout_margin="20dp"
+    android:contentDescription="Unlock controls" />
+</FrameLayout>

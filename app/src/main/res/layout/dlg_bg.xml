@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_height="wrap_content"
+android:layout_width="match_parent"
+android:background="@drawable/round_bg_red_stroke"
+android:padding="16dp"
+android:orientation="vertical"
+android:id="@+id/dlgRoot">
+    <TextView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:gravity="start"
+    android:textSize="16sp"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:id="@+id/dlg_title" />
+    <EditText
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="8dp"
+    android:imeOptions="actionDone"
+    android:background="@color/gry_dark"
+    android:gravity="center"
+    android:padding="12dp"
+    android:textColor="@color/white"
+    android:layout_marginTop="8dp"
+    android:inputType="numberDecimal"
+    android:id="@+id/dlg_input" />
+    <!-- Toggle for Advanced Settings -->
+    <LinearLayout
+    android:id="@+id/dlg_advanced_toggle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="8dp"
+    android:padding="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?android:attr/selectableItemBackground">
+        <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Advanced Settings"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+        <ImageView
+        android:id="@+id/dlg_advanced_arrow"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_expand_more"
+        app:tint="@color/white" />
+    </LinearLayout>
+    <!-- Expandable Container -->
+    <LinearLayout
+    android:id="@+id/dlg_advance"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:layout_marginTop="4dp">
+        <!-- RadioGroup for direction -->
+<RadioGroup
+    android:id="@+id/dlg_rotation_group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RadioButton
+        android:id="@+id/dlg_rotate_disable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disable" />
+
+    <RadioButton
+        android:id="@+id/dlg_rotate_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enable - Rotate Right" />
+
+    <RadioButton
+        android:id="@+id/dlg_rotate_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enable - Rotate Left" />
+</RadioGroup>
+        <!-- New CheckBox for Mirror -->
+        <CheckBox
+        android:id="@+id/dlg_mirror"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Mirror Horizontally"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+    </LinearLayout>
+    <LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal">
+        <com.google.android.material.button.MaterialButton
+        android:layout_height="48dp"
+        android:layout_width="wrap_content"
+        app:icon="@drawable/ic_close"
+        app:iconSize="24dp"
+        app:iconTint="@color/clr_PrimMid"
+        app:backgroundTint="@color/gry_dark"
+        app:cornerRadius="8dp"
+        app:iconGravity="top"
+        android:layout_weight="1"
+        android:id="@+id/dlg_neg" />
+        <View
+        android:layout_height="match_parent"
+        android:layout_width="8dp" />
+        <com.google.android.material.button.MaterialButton
+        android:layout_height="48dp"
+        android:layout_width="wrap_content"
+        app:icon="@drawable/ic_check"
+        app:iconSize="24dp"
+        app:iconTint="@color/clr_PrimMid"
+        app:backgroundTint="@color/gry_dark"
+        app:cornerRadius="8dp"
+        app:iconGravity="top"
+        android:layout_weight="1"
+        android:id="@+id/dlg_pos" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/fabContainer"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:clickable="false"
+android:focusable="false"
+android:fitsSystemWindows="false"
+android:clipChildren="false"
+android:clipToPadding="false"
+android:clipToOutline="false"
+android:measureAllChildren="true">
+    <ImageButton
+    android:id="@+id/btnRotateR"
+    android:layout_width="36dp"
+    android:layout_height="36dp"
+    android:layout_gravity="bottom|end"
+    android:src="@drawable/ic_rotate_right"
+    style="@style/FloatImgFab"
+    android:visibility="gone" />
+    <ImageButton
+    android:id="@+id/btnRotateL"
+    android:layout_width="36dp"
+    android:layout_height="36dp"
+    android:layout_gravity="bottom|end"
+    android:src="@drawable/ic_rotate_left"
+    style="@style/FloatImgFab"
+    android:visibility="gone" />
+    <ImageButton
+    android:id="@+id/btnOrientation"
+    android:layout_width="36dp"
+    android:layout_height="36dp"
+    android:layout_gravity="bottom|end"
+    android:src="@drawable/ic_orientation"
+    style="@style/FloatImgFab"
+    android:visibility="gone" />
+    <ImageButton
+    android:id="@+id/btnEnhance"
+    android:layout_width="36dp"
+    android:layout_height="36dp"
+    android:layout_gravity="bottom|end"
+    android:src="@drawable/ic_auto_enhance"
+    style="@style/FloatImgFab"
+    android:visibility="gone" />
+    <ImageButton
+    android:id="@+id/btnMirrorV"
+    android:layout_width="36dp"
+    android:layout_height="36dp"
+    android:layout_gravity="bottom|end"
+    android:src="@drawable/ic_mirror_vert"
+    style="@style/FloatImgFab"
+    android:visibility="gone" />
+    <ImageButton
+    android:id="@+id/btnMirrorH"
+    android:layout_width="36dp"
+    android:layout_height="36dp"
+    android:layout_gravity="bottom|end"
+    android:src="@drawable/ic_mirror_horiz"
+    style="@style/FloatImgFab"
+    android:visibility="gone" />
+    <ImageButton
+    android:id="@+id/btnParent"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_gravity="bottom|end"
+    android:src="@drawable/ic_plus"
+    style="@style/FloatImgFab"
+    android:longClickable="true" />
+</FrameLayout>

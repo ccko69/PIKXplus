@@ -1,0 +1,236 @@
+<PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:key="root">
+    <!-- ======================== img SECTION ======================== -->
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="Image">
+        <SwitchPreferenceCompat
+            app:key="img_max_brightness"
+            app:title="Maximum Brightness"
+            app:iconSpaceReserved="false"
+            app:summary="Set default brightness to maximum when viewing photos"
+            app:defaultValue="false" />
+        <com.ccko.pikxplus.ux.settings.ColorAdjustPreference
+            app:key="img_color_adjust"
+            app:title="Color Adjustments"
+            app:iconSpaceReserved="false"
+            app:summary="Adjust brightness, contrast, and saturation for images." />
+        <SwitchPreferenceCompat
+            app:key="img_hotspot"
+            app:title="Enable Hotspots"
+            app:iconSpaceReserved="false"
+            app:summary="Tap on the left or right side of the screen to navigate to the previous or next item in the image viewer."
+            app:defaultValue="true" />
+        <SwitchPreferenceCompat
+            app:key="img_header"
+            app:title="Enable Header"
+            app:iconSpaceReserved="false"
+            app:summary="Show the first item thumbnail as the header for each folder by default."
+            app:defaultValue="true" />
+        <SwitchPreferenceCompat
+            app:key="img_parallax"
+            app:title="Enable Parallax in Header"
+            app:iconSpaceReserved="false"
+            app:summary="Use the device sensors to create a parallax effect on the thumbnail in the header."
+            app:defaultValue="false" />
+        <com.ccko.pikxplus.ux.settings.ValueDropDownPreference
+            app:key="img_thumb_quality"
+            app:title="Thumbnail Quality"
+            app:iconSpaceReserved="false"
+            app:summary="Select the quality of thumbnails"
+            app:entries="@array/thumbnail_quality_entries"
+            app:entryValues="@array/thumbnail_quality_values"
+            app:defaultValue="medium"
+            android:layout_marginBottom="20dp"
+            app:widgetLayout="@layout/preference_widget_dropdown_value" />
+        <Preference
+            app:key="img_title_slideShow"
+            app:title="SlideShow"
+            app:iconSpaceReserved="false"
+            app:summary=" "
+            app:selectable="false" />
+        <SwitchPreferenceCompat
+            app:key="img_loop"
+            app:title="Loop"
+            app:iconSpaceReserved="false"
+            app:summary="Enable looping of the slideshow when it reaches the end."
+            app:defaultValue="false" />
+        <com.ccko.pikxplus.ux.settings.ValueDropDownPreference
+            app:key="img_auto_rotation_mode"
+            app:title="Auto Rotation"
+            app:iconSpaceReserved="false"
+            app:summary="Automatically rotate the image based on its dimensions (portrait or landscape), independent of system orientation."
+            app:entries="@array/img_auto_rotation_mode_entries"
+            app:entryValues="@array/img_auto_rotation_mode_values"
+            app:defaultValue="disable"
+            app:widgetLayout="@layout/preference_widget_dropdown_value" />
+        <SwitchPreferenceCompat
+            app:key="img_auto_mirror"
+            app:title="Mirror"
+            app:iconSpaceReserved="false"
+            app:summary="Also mirror the image automatically."
+            app:defaultValue="false" />
+        <com.ccko.pikxplus.ux.settings.ValueDropDownPreference
+            app:key="img_animation"
+            app:title="Animation"
+            app:iconSpaceReserved="false"
+            app:summary="Select the quality of thumbnails"
+            app:entries="@array/slideshow_anim_entries"
+            app:entryValues="@array/slideshow_anim_values"
+            app:defaultValue="fade"
+            app:widgetLayout="@layout/preference_widget_dropdown_value" />
+    </PreferenceCategory>
+    <!-- ======================== vid SECTION ======================== -->
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="Video">
+        <SwitchPreferenceCompat
+            app:key="vid_max_brightness"
+            app:title="Maximum Brightness"
+            app:iconSpaceReserved="false"
+            app:summary="Set default brightness to maximum when watching videos"
+            app:defaultValue="false" />
+        <SwitchPreferenceCompat
+            app:key="vid_mute"
+            app:title="Mute"
+            app:iconSpaceReserved="false"
+            app:summary="Mute the vid audio by default when starting playback."
+            app:defaultValue="false" />
+        <SwitchPreferenceCompat
+            app:key="vid_loop"
+            app:title="Loop"
+            app:iconSpaceReserved="false"
+            app:summary="Enable looping for single vids by default."
+            app:defaultValue="false" />
+        <com.ccko.pikxplus.ux.settings.ValueDropDownPreference
+            app:key="vid_landscape_mode"
+            app:title="Landscape Mode"
+            app:iconSpaceReserved="false"
+            app:summary="Choose orientation behavior for videos."
+            app:entries="@array/vid_landscape_mode_entries"
+            app:entryValues="@array/vid_landscape_mode_values"
+            app:defaultValue="portrait"
+            app:widgetLayout="@layout/preference_widget_dropdown_value" />
+        <SwitchPreferenceCompat
+            app:key="vid_smart_previous"
+            app:title="Smart Previous"
+            app:iconSpaceReserved="false"
+            app:summary="Restart the video from the beginning when tapping the previous button; if the video is within the first 5-10% of its duration, switch to the previous video."
+            app:defaultValue="false" />
+        <SwitchPreferenceCompat
+            app:key="vid_remember"
+            app:title="Remember Selection"
+            app:iconSpaceReserved="false"
+            app:summary="Remember user changes while watching a vid, such as playback speed and orientation, on a per-vid basis."
+            app:defaultValue="false" />
+        <SwitchPreferenceCompat
+            app:key="vid_smart_resume"
+            app:title="Smart Resume"
+            app:iconSpaceReserved="false"
+            app:summary="Show a popup asking if the user wants to resume or start from the beginning; only the first video will show this popup, not when skipping to the next video."
+            app:defaultValue="false" />
+        <SwitchPreferenceCompat
+            app:key="vid_smooth_switch"
+            app:title="Smooth Switch"
+            app:iconSpaceReserved="false"
+            app:summary="Fade in/out audio when navigating to the previous or next video."
+            app:defaultValue="false" />
+        <SwitchPreferenceCompat
+            app:key="vid_sync_bar"
+            app:title="Sync System Bar"
+            app:iconSpaceReserved="false"
+            app:summary="Make the navigation and status bars visible/invisible in sync with the video player controls."
+            app:defaultValue="false" />
+        <SwitchPreferenceCompat
+            app:key="vid_vol_boost"
+            app:title="Volume Boost"
+            app:iconSpaceReserved="false"
+            app:summary="Increase audio volume up to 200% of the system default."
+            app:defaultValue="false" />
+        <SwitchPreferenceCompat
+            app:key="vid_pause_dc"
+            app:title="Pause When Disconnected"
+            app:iconSpaceReserved="false"
+            app:summary="Automatically pause video playback when the headset is disconnected."
+            app:defaultValue="false" />
+        <SeekBarPreference
+            app:key="vid_autohide"
+            app:title="AutoHide Controllers"
+            app:iconSpaceReserved="false"
+            app:summary="Set a timer for automatically hiding video controls; set to 0 to disable."
+            app:min="0"
+            android:max="10"
+            app:defaultValue="5"
+            app:showSeekBarValue="true" />
+    </PreferenceCategory>
+    <!-- ======================== GENERAL SECTION ======================== -->
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="General">
+        <SwitchPreferenceCompat
+            app:key="gen_keep_screen"
+            app:title="Keep Screen On"
+            app:iconSpaceReserved="false"
+            app:summary="Prevent the screen from turning off while using the app."
+            app:defaultValue="true" />
+        <SwitchPreferenceCompat
+            app:key="gen_album_start"
+            app:title="Start in Album"
+            app:iconSpaceReserved="false"
+            app:summary="Launch the app in the Albums fragment by default; otherwise, return to the last viewed location."
+            app:defaultValue="true" />
+        <SwitchPreferenceCompat
+            app:key="gen_navbar"
+            app:title="Navigation Bar"
+            app:iconSpaceReserved="false"
+            app:summary="Show/hide the bottom navigation bar."
+            app:defaultValue="true" />
+        <SwitchPreferenceCompat
+            app:key="gen_override_ori"
+            app:title="Override Orientation"
+            app:iconSpaceReserved="false"
+            app:summary="Override system orientation; auto rotation will be enabled by default within the app."
+            app:defaultValue="false" />
+        <SwitchPreferenceCompat
+            app:key="gen_recycle"
+            app:title="Recycle Bin"
+            app:iconSpaceReserved="false"
+            app:summary="Placeholder for future implementation of a recycle bin feature."
+            app:defaultValue="false" />
+        <SwitchPreferenceCompat
+            app:key="gen_nomedia"
+            app:title="Recognize nomedia"
+            app:iconSpaceReserved="false"
+            app:summary="When disabled, the app will ignore .nomedia files during storage scanning and include those folders."
+            app:defaultValue="true" />
+        <SwitchPreferenceCompat
+            app:key="gen_dot"
+            app:title="Recognize (.)"
+            app:iconSpaceReserved="false"
+            app:summary="Include folders that start with dot(.) when scanning the storage if this option is enabled."
+            app:defaultValue="false" />
+        <Preference
+            app:key="gen_scan"
+            app:title="Scan Storage"
+            app:summary="Re-scan the storage for media files."
+            app:iconSpaceReserved="false" />
+        <Preference
+            app:key="gen_cache"
+            app:title="Clear Cache"
+            app:summary="Clear the cache to free up space."
+            app:iconSpaceReserved="false" />
+        <Preference
+            app:key="gen_about"
+            app:title="About"
+            app:summary="View information about the app."
+            app:iconSpaceReserved="false" />
+        <Preference
+            app:key="gen_build_ver"
+            app:title="Build Version"
+            app:iconSpaceReserved="false"
+            app:summary="v2.13.354"
+            app:selectable="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

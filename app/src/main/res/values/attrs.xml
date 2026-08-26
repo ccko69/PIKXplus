@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SubsamplingScaleImageView">
+        <attr
+            name="assetName"
+            format="string" />
+        <attr
+            name="src"
+            format="enum" />
+        <attr
+            name="panEnabled"
+            format="boolean" />
+        <attr
+            name="zoomEnabled"
+            format="boolean" />
+        <attr
+            name="quickScaleEnabled"
+            format="boolean" />
+        <attr
+            name="tileBackgroundColor"
+            format="enum" />
+    </declare-styleable>
+</resources>

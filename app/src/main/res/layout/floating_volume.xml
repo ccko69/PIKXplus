@@ -1,0 +1,51 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="24dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="#88000000">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp">
+        <!-- Percentage text -->
+        <TextView
+            android:id="@+id/volumeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:gravity="top"
+            android:text="50%"
+            style="@style/DrkShdwR3x1y1"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+        <!-- Vertical seekbar (rotated) -->
+        <SeekBar
+            android:id="@+id/volumeSeekBar"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxHeight="2dp"
+            android:minHeight="2dp"
+            android:progressDrawable="@drawable/seekbar_progress"
+            android:rotation="270"
+            android:splitTrack="false"
+            android:thumb="@drawable/seekbar_thumb_vert"/>
+        <!-- Volume icon -->
+        <ImageView
+            android:id="@+id/volumeIcon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginVertical="4dp"
+            android:gravity="bottom"
+            android:elevation="2dp"
+            android:src="@drawable/ic_volume_on"
+            android:tint="@color/white"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

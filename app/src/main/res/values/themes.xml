@@ -1,0 +1,28 @@
+<resources xmlns:tools="schemas.android.com">
+    <style
+        name="Theme.MyApplication"
+        parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary colors -->
+        <item name="colorPrimary">#FF000000</item>
+        <item name="colorPrimaryVariant">#FFB2B2B2</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <!-- Secondary colors -->
+        <item name="colorSecondary">#FFB2B2B2</item>
+        <item name="colorSecondaryVariant">#FF000000</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <!-- Text colors -->
+        <item name="android:textColor">#000000</item>
+        <item name="android:textColorPrimary">#FFFFFFFF</item> <!-- Primary text (Preference titles) -->
+        <!-- Switch/Checkbox Colors -->
+        <item name="colorControlActivated">#FF600020</item> <!-- checked color of thumb/track -->
+        <item name="colorControlNormal">#FFB2B2B2</item> <!-- unchecked track color -->
+        <!-- Status bar -->
+        <item name="android:windowBackground">#FF424242</item>
+        <item
+            name="android:statusBarColor"
+            tools:targetApi="l">?attr/colorSecondaryVariant</item>
+        <item
+            name="android:navigationBarColor"
+            tools:targetApi="l">?attr/colorSecondaryVariant</item>
+    </style>
+</resources>

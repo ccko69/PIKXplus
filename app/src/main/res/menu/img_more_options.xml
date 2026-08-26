@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/img_orientation"
+        android:icon="@drawable/ic_orientation"
+        android:iconTint="@color/black"
+        android:title="Orientation" />
+    <item
+        android:id="@+id/img_delete"
+        android:icon="@drawable/ic_delete"
+        android:iconTint="@color/black"
+        android:title="Delete" />
+    <item
+        android:id="@+id/img_slideshow"
+        android:icon="@drawable/ic_play_circle"
+        android:iconTint="@color/black"
+        android:title="SlideShow" />
+    <item
+        android:id="@+id/img_enhance"
+        android:icon="@drawable/ic_auto_enhance"
+        android:checkable="true"
+        android:iconTint="@color/black"
+        android:title="Auto Enhance" />
+    <item
+        android:id="@+id/img_info"
+        android:icon="@drawable/ic_info"
+        android:iconTint="@color/black"
+        android:title="Info" />
+</menu>
